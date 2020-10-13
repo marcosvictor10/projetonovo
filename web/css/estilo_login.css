@@ -1,0 +1,94 @@
+body{
+        overflow-y: hidden;
+	padding: 0 5rem;
+        margin-top: 5%;
+	/*background: white;*/
+	/*background: #ffc107;*/
+	background: linear-gradient(-45deg, #e73c7e38, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	}
+#titulo{
+        font: bold 25px verdana, sans-serif;
+        color: #87CEEB
+       }
+
+	@keyframes gradient {
+	0% {
+            background-position: 0% 50%;
+	}
+	50% {
+            background-position: 100% 50%;
+	}
+	100% {
+            background-position: 0% 50%;
+	}
+	}
+.cont-login{
+	padding-top: 3%;
+	height: 80vh;
+	/*background: #edeff2;*/
+	background: #fffffff5;
+}
+
+.cont-img{
+	background-image: url("../img/header/farmacia-login.jpg");
+	/*background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;*/
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	padding: 0;
+	border-top-right-radius: 30px;
+	border-bottom-right-radius: 30px;
+}
+
+.opacity-img{
+	width: 100%;
+	height: 100%;
+	background: #ffffff00;
+	position: absolute;
+	animation: opacity-img 6s ;
+	border-top-right-radius: 30px;
+	border-bottom-right-radius: 30px;
+}
+
+@keyframes opacity-img {
+0% {
+	background: #ffffffff;
+	}
+100% {
+	background: #ffffff00;
+}
+}
+
+.input-group{
+	width: 80%;
+	left: 10%;
+}
+
+.input-group-text {
+	min-width: 100px;
+	}
+
+h1{
+	font-size: calc(1em + 2.5vw);
+	margin-bottom: 1rem;
+}
+
+.img-login{
+	width: 100%;
+	height: 100%;
+	border-top-right-radius: 30px;
+	border-bottom-right-radius: 30px;
+	position: relative;
+}
+
+.logo-img{
+	top: 50px;
+        left: 0;
+        width: 200px;
+	height: 50px;
+	/*image-rendering: pixelated;*/
+	border-radius: 10px;
+}

@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    background: #E1E7F3;
+}
+#img{        
+    width: 250px;    
+}
+
+#logo{
+    width: 200px;
+    margin-left: 50px;    
+    }
+h1{
+    font-family: 'century gothic';
+    font-size: 30px;
+    font-weight: bold;
+    color: blue;
+    
+}
+label{
+    font-family: 'century gothic';
+    font-size: 13px;
+    font-weight: bold;
+    color: blue;
+}
+p, h3{
+    font-family: 'century gothic';
+    font-size: 15px;
+    font-weight: bold; 
+}
+input{
+    border-radius: 5px;
+    border-color: blue;
+    width: 300px;
+    height: 20px;    
+}
+#cad_senha{
+    height: 300px;
+    width: 400px;
+    margin-top: -95px;
+    margin-left: 500px;    
+}
+#btn_cad_senha{
+  font-size: 17px;
+  padding: 5px 15px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #DCDCDC;
+  background-color: #00008B;
+  border: none;
+  border-radius: 3px;
+  box-shadow: 0 3px #999;
+}
+
+

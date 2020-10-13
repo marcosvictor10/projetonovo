@@ -1,0 +1,90 @@
+*{
+    background: #E1E7F3;
+    font-family: arial, verdana, sans-serif;
+}
+#logo{
+    width: 250px;    
+}
+#log{
+    padding: 0px;
+}
+#img{
+    width: 50px
+}
+
+#header_top{
+    position:relative;
+    top: 0%;
+    left: 5%;
+    
+}
+select, option, input {
+    border-radius: 5px;
+    border-color: blue;
+    width: 300px;
+    height: 20px;
+}
+#numero{
+    width: 50px;
+    height: 20px;
+}
+#sel_end{
+    width: 100px;
+    height: 20px;
+}
+#sel_estado{
+    width: 180px;
+    height: 20px;
+}
+h1{
+    font-family: 'century gothic';
+    font-size: 30px;
+    font-weight: bold;
+    color: #0000CD;
+    
+}
+#form_forn{
+  margin-top:-210px;
+  padding-left: 500px; 
+}
+button {
+  font-size: 17px;
+  padding: 5px 15px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #DCDCDC;
+  background-color: #00008B;
+  border: none;
+  border-radius: 3px;
+  box-shadow: 0 3px #999;
+  margin-left: 100px;
+}
+
+#btn_cadastrar:hover {
+    background-color: #6495ED
+}
+#btn_editar:hover {
+    background-color: #6495ED
+}
+#btn_excluir:hover {
+    background-color: #6495ED
+}
+label{
+    font-family: 'century gothic';
+    font-size: 13px;
+    font-weight: bold;
+    color: blue;
+}
+p{
+    font-family: 'century gothic';
+    font-size: 15px;
+    font-weight: bold; 
+}
+#form_fornecedor{
+    height: 500px;
+    width: 500px;
+    margin-top: 10px;
+    margin-left: 500px;
+    margin-top: 10px;
+}

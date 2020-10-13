@@ -1,0 +1,46 @@
+body{
+    background: linear-gradient(45deg, #61b6ce 0%,#3698c9 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+.container-menu{
+   background: linear-gradient(to right, #b1cee2 0%,#95bfdb 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    position: relative;
+    height: 500px;
+    width: 100%;
+    margin-top: 10%
+    
+}
+.botao-menu{
+    width: 80%;
+    height: 100px;
+    margin: 1rem 1rem;
+    
+}
+
+a:link, a:active, a:visited{
+    color: white;
+    text-decoration: none
+}
+
+.container-figura{
+    background-image: url("../img/header/farmacia-login.jpg");
+    background-size: 100% 100%;
+    padding: 0;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    position: relative;
+    height: 500px;
+    width: 100%;
+    margin-top: 10%
+}
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    background: #E1E7F3;
+    }
+    
+#img{        
+    width: 250px;    
+}
+
+#logo{
+    width: 200px;
+    margin-left: 50px;    
+    }
+
+#cad{
+    height: 500px;
+    width: 500px;
+    margin-top: 10px;
+    margin-left: 500px;
+    margin-top: -100px;
+    
+    }
+label{
+    font-family: 'century gothic';
+    font-size: 13px;
+    font-weight: bold;
+    color: blue;
+}
+p{
+    font-family: 'century gothic';
+    font-size: 15px;
+    font-weight: bold; 
+}
+select, option, input {
+    border-radius: 5px;
+    border-color: blue;
+    width: 300px;
+    height: 20px;
+}
+
+#txt_cad{
+    font-family: 'century gothic';
+    font-size: 30px;
+    font-weight: bold;
+    color: #0000CD;
+    margin-left: 90px;
+}
+#btn_cad{
+  font-size: 17px;
+  padding: 5px 15px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #DCDCDC;
+  background-color: #00008B;
+  border: none;
+  border-radius: 3px;
+  box-shadow: 0 3px #999;
+}
+
+#btn_cad:hover {
+    background-color: #6495ED
+}
+#btn_voltar{
+  font-size: 17px;
+  padding: 5px 15px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #DCDCDC;
+  background-color: #00008B;
+  border: none;
+  border-radius: 3px;
+  box-shadow: 0 3px #999;
+  margin-left: 30px
+}
+#btn_voltar:hover {
+    background-color: #6495ED
+}
+
