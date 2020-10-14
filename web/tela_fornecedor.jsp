@@ -60,10 +60,10 @@
             <input name="cidade_fornecedor" required="required" type="text" placeholder="Cidade"/><br/><br/>
 
             <label>CEP:</label>
-            <input name="cep_fornecedor" required="required" type="text" minlength="8" maxlength="8" placeholder="00000-000"/><br/><br/>
+            <input name="cep_fornecedor" required="required" type="text" minlength="9" maxlength="9" placeholder="00000-000"/><br/><br/>
 
             <label>Telefone:</label>
-            <input name="telefone_fornecedor" required="required" type="text" minlength="11" maxlength="11" placeholder="(00)0000-0000"><br><br/>
+            <input name="telefone_fornecedor" required="required" type="text" minlength="13" maxlength="14" placeholder="(00)0000-0000"><br><br/>
             <input type="submit" value="Cadastrar"/>
             
         </form><br><br>

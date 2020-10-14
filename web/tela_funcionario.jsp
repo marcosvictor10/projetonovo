@@ -15,7 +15,7 @@
             <input name="nome_cadastro" required="required" type="text" autocomplete="off" placeholder="Nome Completo" /><br/><br/>
 
             <label>CPF:</label>
-            <input name="cpf_cadastro" required="required" type="tel" autocomplete="off" placeholder="000.000.000-00" minlength="11" maxlength="11" /><br/><br/>
+            <input name="cpf_cadastro" required="required" type="tel" autocomplete="off" placeholder="000.000.000-00" minlength="14" maxlength="14" /><br/><br/>
 
             <label>Nascimento:</label>
             <input name="nascimento_cadastro" autocomplete="off" required="required" type="date" /><br/><br/>
@@ -24,7 +24,7 @@
             <input name="email_cadastro" required="required" autocomplete="off" type="email" placeholder="softfarma@softfarma.com" /><br/><br/>
 
             <label>Telefone:</label>
-            <input name="telefone_cadastro" required="required" autocomplete="off" type="tel" placeholder="(11)99505-2373" minlength="11" maxlength="11" /><br/><br/>
+            <input name="telefone_cadastro" required="required" autocomplete="off" type="tel" placeholder="(00)00000-0000" minlength="13" maxlength="14" /><br/><br/>
 
             <label>Tipo de Funcionário:</label>
             <select name="tipo_cadastro" >
