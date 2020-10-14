@@ -13,10 +13,10 @@
 
         <h1>Cadastro Fornecedor</h1>
 
-        <form method="post" action="executar_editar_fornecedor.jsp">
+        <form method="post" action="executar_cadastro_fornecedor.jsp">
 
             <label>CNPJ:</label>
-            <input name="cnpj_fornecedor" required="required" type="text" minlength="14" maxlength="14" placeholder="00.000.000/0000-00"/><br/><br/>
+            <input name="cnpj_fornecedor" required="required" type="text" minlength="18" maxlength="18" placeholder="00.000.000/0000-00"/><br/><br/>
 
             <label>Nome Fornecedor:</label>
             <input name="nome_fornecedor" required="required" type="text" placeholder="Nome Fornecedor" /><br/><br/>
@@ -65,6 +65,7 @@
             <label>Telefone:</label>
             <input name="telefone_fornecedor" required="required" type="text" minlength="11" maxlength="11" placeholder="(00)0000-0000"><br><br/>
             <input type="submit" value="Cadastrar"/>
+            
         </form><br><br>
         
         <table border="1">

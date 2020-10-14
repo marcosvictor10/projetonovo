@@ -28,7 +28,7 @@
                             <div class="input-group-prepend">
                                 <span class="input-group-text" id="basic-addon1">Usuário</span>
                             </div>
-                            <input class="form-control " name="usuario_login" required="required" type="text" placeholder="Nome">
+                            <input class="form-control " name="usuario_login" required="required" type="text" placeholder="CPF">
                         </div>
                         <br>
 
