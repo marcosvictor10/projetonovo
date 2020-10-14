@@ -6,7 +6,7 @@ create table tb_fornecedor(
 id_fornecedor 			int primary key auto_increment,
 cnpj_fornecedor			varchar(20) unique not null,
 nome_fornecedor 		varchar(50) not null,
-endereco_fornecedor 	varchar(100) not null,
+endereco_fornecedor 		varchar(100) not null,
 numero_fornecedor		varchar(5) not null,
 cidade_fornecedor		varchar(100) not null,
 cep_fornecedor			varchar(20) not null,
@@ -15,16 +15,16 @@ estado_fornecedor               varchar(50) not null
 );
 
 CREATE TABLE tb_produto(
-    id_produto     		int PRIMARY KEY auto_increment,
-	id_fornecedor   	int not null,
-    nome_produto    	varchar(50) not null,
-    tipo_produto		varchar(50) not null,
-    dosagem_produto		varchar(50) not null,
-    codBarras_produtos  varchar(50) not null,
-    dt_fabricacao		varchar(20) not null,
-    dt_validade			varchar(20) not null,
-    quantidade_produto	int not null,
-	valor_produto   	varchar(20) not null,
+id_produto     		int PRIMARY KEY auto_increment,
+id_fornecedor   	int not null,
+nome_produto    	varchar(50) not null,
+tipo_produto		varchar(50) not null,
+dosagem_produto		varchar(50) not null,
+codBarras_produtos  	varchar(50) not null,
+dt_fabricacao		varchar(20) not null,
+dt_validade		varchar(20) not null,
+quantidade_produto	int not null,
+valor_produto   	varchar(20) not null,
     
     constraint id_fornecedor_fk 
     foreign key (id_fornecedor) 
@@ -57,12 +57,25 @@ email_cliente 			varchar(50) not null
 
 create table tb_pedido(
 id_pedido 			int primary key auto_increment,
-dt_pedido 			varchar(20) not null,
-cliente_pedido			varchar(50) not null,
-funcionario_pedido		varchar(50) not null,
-produto_pedido			int not null,
-quantidade_pedido		int not null,
-total_pedido			varchar(10) not null
+id_cliente 			int not null,
+id_funcionario			int not null,
+quantidade_produto		int not null,
+valor_total			varchar(20) not null,
+
+constraint id_cliente_fk foreign key (id_cliente) references tb_cliente (id_cliente),
+constraint id_funcionario_fk foreign key (id_funcionario) references tb_funcionario (id_funcionario)
+
+);
+
+create table tb_pedido_produto(
+
+id_pedido_produto	int primary key auto_increment,
+id_pedido		int not null,
+id_produto		int not null,
+
+constraint id_pedido_fk foreign key (id_pedido) references tb_pedido (id_pedido),
+constraint id_produto_fk foreign key (id_produto) references tb_produto (id_produto)
+
 );
 
 
