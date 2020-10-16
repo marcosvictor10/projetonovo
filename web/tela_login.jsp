@@ -37,7 +37,7 @@
                                 <span class="input-group-text" id="basic-addon1">Senha</span>
                             </div>
 
-                            <input  name="senha_login" class="form-control " required="required" type="password" placeholder="Senha">
+                            <input  name="senha_login" class="form-control" required="required" type="password" placeholder="Senha">
                         </div>
                         <br>
 

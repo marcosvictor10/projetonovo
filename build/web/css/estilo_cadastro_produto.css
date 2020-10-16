@@ -1,73 +1,61 @@
-*{
-    background: #E1E7F3;
-    font-family: arial, verdana, sans-serif;
+body{
+    background: linear-gradient(45deg, #61b6ce 0%,#3698c9 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
-#logo{
-    width: 250px;
-    padding-right: 50%;
-    
+
+.container-figura{
+    background-image: url("../img/header/farma_produto.jpg");    
+    background-size: 100% 100%;
+    padding: 0;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    position: relative;
+    height: 650px;
+    width: 100%;
+    margin-top: 10%
+        
 }
-#log{
-    padding: 0px;
+.opacity-img{
+	width: 100%;
+	height: 100%;
+	background: #ffffff00;
+	position: absolute;
+	animation: opacity-img 6s ;
+	border-top-right-radius: 30px;
+	border-bottom-right-radius: 30px;
 }
-#img{
-    width: 50px
+
+@keyframes opacity-img {
+0% {
+	background: #ffffffff;
+	}
+100% {
+	background: #ffffff00;
 }
-select, option, input {
-    border-radius: 5px;
-    border-color: blue;
-    width: 300px;
-    height: 20px;
 }
-#tipo_produto{
-    width: 110px;
-    height: 20px;
+
+.container-menu{
+   background: linear-gradient(to right, #b1cee2 0%,#95bfdb 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    position: relative;
+    height: 650px;
+    width: 100%;
+    margin-top: 10%
 }
+
 h1{
-    font-family: 'century gothic';
-    font-size: 30px;
-    font-weight: bold;
-    color: #0000CD;
-    margin-left: 40%;
-    margin-top: -50px;
+    font-size: calc(1em + 2.5vw);
+    margin-bottom: 1rem;
 }
 
-label{
-    font-family: 'century gothic';
-    font-size: 13px;
-    font-weight: bold;
-    color: blue;
-}
-p{
-    font-family: 'century gothic';
-    font-size: 15px;
-    font-weight: bold; 
-}
-#btn_cadastrar{
-  font-size: 17px;
-  padding: 5px 15px;
-  text-align: center;
-  cursor: pointer;
-  outline: none;
-  color: #DCDCDC;
-  background-color: #00008B;
-  border: none;
-  border-radius: 3px;
-  box-shadow: 0 3px #999;
-  margin-left: 100px;
+.input-group{
+	width: 80%;
+	left: 5%;
 }
 
-#btn_cadastrar:hover {
-    background-color: #6495ED
-}
-#h1_cad{
-  margin-top:-210px;
-  padding-left: 40px; 
-}
-#td_form{
-    height: 500px;
-    width: 500px;
-    margin-top: 10px;
-    margin-left: 500px;
-    margin-top: 10px;
-}
+.input-group-text {
+	min-width: 100px;
+	}
+
+#titulo{
+        font: bold 35px verdana, sans-serif;
+        color: #0000CD        
+       }

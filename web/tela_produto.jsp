@@ -7,46 +7,95 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
         <title>Cadastro Produto</title>
+
+        <link rel="stylesheet"
+              href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <script
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/estilo_cadastro_produto.css">
     </head>
     <body>
+        <div class="row">
 
-        <h1>Cadastro Produto</h1>
+            <div class="col-6 pl-5 p-0">
+                <div class="container-menu rounded">
+                    <h1 id="titulo">Cadastro Produto</h1>
 
-        <form method="post" action="executar_cadastro_produto.jsp">  
+                    <form method="post" action="executar_cadastro_produto.jsp">  
+                        <div class="input-group mb-3 mx-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1">Código Fonecedor</span>
+                            </div>
+                            <input name="id_fornecedor" class="form-control" required="required" type="text" placeholder="Código Fornecedor" />
+                        </div>
+                        <div class="input-group mb-3 mx-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1">Nome Produto</span>
+                            </div>
+                            <input name="nome_produto" class="form-control" required="required" type="text" placeholder="Nome Produto" />
+                        </div>
+                        <div class="input-group mb-3 mx-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1">Tipo Produto</span>
+                            </div>
+                            <select name="tipo_produto" class="form-control">
+                                <option >Comprimido</option>
+                                <option >Gotas</option>
+                                <option >Xarope</option>
+                                <option >Pomada</option>
+                            </select>
+                        </div>
+                        <div class="input-group mb-3 mx-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1">Dosagem Medicamento</span>
+                            </div>
+                            <input name="dosagem_produto" class="form-control" required="required" type="text" placeholder="Dosagem Medicamento" />
+                        </div>
+                        <div class="input-group mb-3 mx-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1">Código de Barras</span>
+                            </div>
+                            <input name="codBarras_produtos" class="form-control" required="required" type="text" placeholder="Código de Barras" />               
+                        </div>
+                        <div class="input-group mb-3 mx-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1">Data de Fabricação</span>
+                            </div>
+                            <input name="dt_fabricacao" class="form-control" required="required" type="date" />
+                        </div>    
+                        <div class="input-group mb-3 mx-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1">Data de Validade</span>
+                            </div>
+                            <input name="dt_validade" class="form-control" required="required" type="date" />
+                        </div>
+                        <div class="input-group mb-3 mx-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1">Quantidade do Produto</span>
+                            </div>
+                            <input name="quantidade_produto" class="form-control" required="required" type="text" placeholder="Quantidade Produto" />
+                        </div>
+                        <div class="input-group mb-3 mx-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1">Valor Produto</span>
+                            </div>
+                            <input name="valor_produto" class="form-control" required="required" type="text" placeholder="R$ 0,00" />
+                        </div>    
+                        <input class="btn btn-success btn-lg" type="submit" value="Cadastrar"/>
+                    </form>
+                </div>
+                <br>
+            </div>       
 
-            <label>Código Fornecedor:</label>
-            <input name="id_fornecedor" required="required" type="text" placeholder="Código Fornecedor" /><br><br>
+            <div class="col-6 pr-5 p-0">
 
-            <label>Nome Produto:</label>
-            <input name="nome_produto" required="required" type="text" placeholder="Nome Produto" /><br><br>
+                <div class="container-figura rounded">
+                    <div class="opacity-img"></div>
 
-            <label>Tipo de Produto:</label>
-            <select name="tipo_produto" >
-                <option >Comprimido</option>
-                <option >Gotas</option>
-                <option >Xarope</option>
-                <option >Pomada</option>
-            </select><br><br>
+                </div>
+            </div> 
 
-            <label>Dosagem Medicamento: </label>
-            <input name="dosagem_produto" required="required" type="text" placeholder="Dosagem Medicamento" /><br><br>
-
-            <label>Código de Barras:</label>
-            <input name="codBarras_produtos" required="required" type="text" placeholder="Código de Barras" /><br><br>               
-
-            <label>Data Fabricação:</label>
-            <input name="dt_fabricacao" required="required" type="date" /><br><br>
-
-            <label>Data Validade:</label>
-            <input name="dt_validade" required="required" type="date" /><br><br>
-
-            <label>Quantidade Produto:</label>
-            <input name="quantidade_produto" required="required" type="text" placeholder="Quantidade Produto" /><br><br>
-
-            <label>Valor Produto:</label>
-            <input name="valor_produto" required="required" type="text" placeholder="R$ 0,00" /><br><br>           
-            <input type="submit" value="Cadastrar"/>
-        </form><br>
+        </div>               
 
         <table border="1">
             <tr>
